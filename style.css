@@ -1,0 +1,306 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  line-height: 1.6;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark-theme {
+  background-color: #121212; /* Dark background */
+  color: #e0e0e0; /* Light text color for dark mode */
+}
+
+/* Header and Navigation */
+header {
+  background: #333;
+  color: #fff;
+  padding: 1rem 0;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+body.dark-theme header {
+  background: #1c1c1c; /* Slightly lighter dark background for header in dark mode */
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  margin: 0 1rem;
+}
+
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+body.dark-theme .nav-links li a {
+  color: #e0e0e0; /* Light text color for dark theme */
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  margin-right: 1rem;
+}
+
+.profile-pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+}
+
+.profile-name {
+  color: #fff;
+  font-weight: bold;
+}
+
+body.dark-theme .profile-name {
+  color: #e0e0e0;
+}
+
+/* Section Styling */
+.section {
+  padding: 3rem 1rem;
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+}
+
+.intro {
+  background-color: #f4f4f4;
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+body.dark-theme .intro {
+  background-color: #2c2c2c; /* Dark background for intro section */
+}
+
+/* Headings */
+h1, h2 {
+  color: #333;
+}
+
+body.dark-theme h1,
+body.dark-theme h2 {
+  color: #e0e0e0; /* Light color for headings in dark theme */
+}
+
+/* Skills Section */
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.skills-list li {
+  background: #333;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+/* Skills Background */
+.skills-bg {
+  background: #f4f4f4; /* Light background for skills */
+  padding: 2rem; /* Add padding for spacing */
+  border-radius: 10px; /* Rounded corners */
+  margin-top: 20px; /* Space the background below the heading */
+}
+
+body.dark-theme .skills-bg {
+  background-color: #2c2c2c; /* Dark background for skills section in dark mode */
+}
+
+
+body.dark-theme .skills-list li {
+  background: #444; /* Slightly lighter dark background for skills */
+  color: #e0e0e0;
+}
+
+/* Projects Section */
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.project {
+  background: #f4f4f4;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+body.dark-theme .project {
+  background: #2c2c2c; /* Dark background for projects */
+  color: #e0e0e0;
+}
+
+/* Links */
+a {
+  color: #333;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+body.dark-theme a {
+  color: #e0e0e0; /* Light color for links in dark theme */
+}
+
+/* Theme Toggle Button */
+#theme-toggle {
+  background: #fff;
+  color: #333;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-left: 1rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#theme-toggle:hover {
+  background: #333;
+  color: #fff;
+}
+
+body.dark-theme #theme-toggle {
+  background: #444;
+  color: #e0e0e0;
+}
+.github-link {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.github-link:hover {
+  background-color: #555;
+}
+
+body.dark-theme .github-link {
+  background-color: #555;
+}
+
+body.dark-theme .github-link:hover {
+  background-color: #777;
+}
+/* Certificates Section */
+.certificates-container {
+  display: flex;
+    justify-content: center; /* Center the certificates horizontally */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    gap: 1rem; /* Space between certificates */
+    margin-top: 1rem;
+}
+.certificate {
+  flex: 1; /* Allow equal width distribution */
+  min-width: 150px; /* Minimum width for each certificate */
+}
+
+.certificate-link {
+  display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    text-align: center; /* Center text within the link */
+}
+
+.certificate-link:hover {
+  background-color: #555;
+}
+
+.certificates-bg {
+  background: #f4f4f4; /* Light background for certificates */
+  padding: 2rem; /* Add padding for spacing */
+  border-radius: 10px; /* Rounded corners */
+  margin-top: 20px; /* Space the background below the heading */
+}
+
+body.dark-theme .certificates-bg {
+  background-color: #2c2c2c; /* Dark background for certificates section in dark mode */
+}
+
+body.dark-theme .certificate-link {
+  background-color: #555;
+}
+
+body.dark-theme .certificate-link:hover {
+  background-color: #777;
+}
+/* About Section */
+#about {
+  padding: 2rem; /* Add padding for spacing */
+  margin-top: 1rem; /* Add margin on top */
+  text-align: center; /* Center the heading */
+}
+
+
+
+/* About Background */
+.about-bg {
+  background: #f4f4f4; /* Light background for about section */
+  padding: 2rem; /* Add padding for spacing */
+  border-radius: 10px; /* Rounded corners */
+  margin-top: 1rem; /* Add margin on top */
+}
+
+body.dark-theme .about-bg {
+  background-color: #2c2c2c; /* Slightly darker background for about section in dark mode */
+}
+
+/* Centering the About Me heading */
+.section-heading {
+  margin-bottom: 1rem; /* Space below the heading */
+  color: #333; /* Default color for light theme */
+}
+
+/* Projects Section */
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.project {
+    background: #f4f4f4; /* Light background for projects */
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+body.dark-theme .project {
+    background: #2c2c2c; /* Dark background for projects */
+    color: #e0e0e0;
+}
